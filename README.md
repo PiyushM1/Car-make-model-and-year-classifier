@@ -8,3 +8,7 @@ The commands to install the required libraries and to download and pre-process t
 For training, different models (resnet50, inception, both trained from scratch as well as using transfer learning), learning rates (from 0.001 to 0.1 in a number of steps), optimizers (stochastic gradient descent and RMSProp), batch sizes (16, 32, 64 and 128) and input sizes, were experimented with, and finally inception_v3 was used with transfer learning while freezing some initial layers during training, along with stochastic gradient descent, with the other hyper-parameters more fine tuned to each specific model.
 
 The performance can be further improved by training for some more time, by using learning rate decay, using different optimizer, or even using a better model architecture.
+
+The workspace with the trained models, intermediate models and training logs can be found [here](https://drive.google.com/drive/folders/13BeQqmqzZYHTrLfer_tPswU79sYJEcjN?usp=sharing).
+
+I have also developed a Flask API to return the predictions for any uploaded image. Check it out [here](https://github.com/PiyushM1/Car-classification-API).
